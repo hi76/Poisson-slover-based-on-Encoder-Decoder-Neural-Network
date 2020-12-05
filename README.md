@@ -1,4 +1,9 @@
 # Poisson-slover-based-on-Encoder-Decoder-Neural-Network
 
-test usage in test file Readme.txt
-train usage in trian file Readme.txt
+Test usage in test file Readme.txt
+
+
+
+
+
+Train usage in trian file Readme.txt
