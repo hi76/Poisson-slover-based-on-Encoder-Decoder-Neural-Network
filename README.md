@@ -5,72 +5,43 @@
 
 #To test model
 #First , enter in your julia. then type these below. Being care of your path.
-
-
-
-
 #For testing 10 thousand data.
 #Show test result: MSELoss,MAXLoss for all data and 13 result examples.
-##############################usage################################In Julia
+#usage In Julia
 
 include("Your path/test/test_10000.jl")
 test_10000("Your path/")
 #or
 test_10000("Your path/",data_nums)
+
 #data_nums is your choice
-
-###########################Once you see "complete all.", test over###############
-
-
-
-
-
+#Once you see "complete all.", test over
 
 #For testing different size data.
-##############################usage################################In Julia
+#usage
 
 include("Your path/test/test_NN.jl")
 test_NN("Your path/")
 #or
 test_NN("Your path/",data_nums,image_size)
+
 #data_nums and image_size are depend on you.
 #you can try image_size (32/64/128/256/512/1025)
-
-###########################Once you see "complete all.", test over###############
-
-
-
-
-
+#Once you see "complete all.", test over
 
 #For testing isochrone_potential problem
-##############################usage################################In Julia
 
 include("Your path/test/test_iso.jl")
 test_iso("Your path/")
 
-###########################Once you see "complete all.", test over###############
+#Once you see "complete all.", test over
 
-
-
-
-
-
-###########################Package installation##############################
+#Package installation
 ]
 add PyPlot,Knet,Statistics,Images
-#############################################################################
-
-
-
-
-
 
 #Train a Encoder-Decoder Neural Network model.
-
-
-################################usage########################################
-
+#usage
 #parameters:
 
 path = "/Your path/"               #don't forget the first and the last '/'.
@@ -84,10 +55,6 @@ read_data = true/false            #Default false, it will generate new data each
 read_model = true/false         #Default false, if set to true, program will continue train model based on your last train.
 show_nums = a number         #Default 500, it means that mseloss.png maxloss.png result.png are drew every 500 train steps. Meantime the trained model will be saved as trained_model.jld2.
 
-
-####################Once you see"Complete train.", train over########################
-
-
-
+#Once you see"Complete train.", train over
 
 #If you want to test your trained model, just copy trained_model.jld2 to test file and run test_**.jl.
