@@ -3,6 +3,9 @@
 
 ################################usage########################################
 
+include("train.jl")
+Train(***)
+
 #parameters:
 
 path = "/Your path/"               #don't forget the first and the last '/'.
